@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 
+
 def canUnlockAll(boxes):
-    for i in range(1, len(boxes)):
+    for i in range(1, len(boxes) - 1):
         check = False
         for j in range(len(boxes)):
-            if i in boxes[j] and i != j:
-                check = True
+            check = (i in boxes[j] and i != j)
+            if check:
                 break
-        if not check:
-            return False
+        if check is False:
+            return check
     return True
