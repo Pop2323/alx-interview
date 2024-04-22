@@ -1,7 +1,13 @@
 #!/usr/bin/python3
+"""
+Solve the Lockboxes problem
+"""
 
 
 def canUnlockAll(boxes):
+    """
+    Check if all boxes can be opened.
+    """
     for i in range(1, len(boxes) - 1):
         check = False
         for j in range(len(boxes)):
