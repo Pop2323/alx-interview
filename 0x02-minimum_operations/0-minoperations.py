@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
-"""
-method that calculates the fewest number of operations
+"""method that calculates the fewest number of operations
 needed to result in exactly n H characters in the file.
 """
+
 
 def minOperations(n):
     """
@@ -16,7 +16,6 @@ def minOperations(n):
     Returns:
         number of operations
     """
-
     if n < 2:
         return 0
     list_of_factors = []
@@ -28,4 +27,3 @@ def minOperations(n):
                 list_of_factors.append(i)
         i += 1
     return sum(list_of_factors)
-
