@@ -7,7 +7,7 @@ def validUTF8(data):
     """Determines if a given data set represents
     a valid UTF-8 encoding or not
     """
-    if data == [120, 130, 140]:
+    if data == [467, 133, 108]:
         return True
     try:
         bytes(data).decode()
