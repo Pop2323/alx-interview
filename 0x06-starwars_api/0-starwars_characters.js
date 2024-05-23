@@ -1,7 +1,6 @@
 #!/usr/bin/node
 
 const request = require('request');
-const url = `https://swapi-api.hbtn.io/api/films/${process.argv[2]}`;
 
 const req = (arr, i) => {
   if (i === arr.length) return;
@@ -15,7 +14,9 @@ const req = (arr, i) => {
   });
 };
 
-request(url, (err, response, body) => {
+request(
+  `https://swapi-api.hbtn.io/api/films/${process.argv[2]}`,
+  (err, response, body) => {
     if (err) {
       throw err;
     } else {
