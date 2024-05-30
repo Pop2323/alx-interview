@@ -21,7 +21,7 @@ def rotate_2d_matrix(matrix):
         [4, 5, 6],
         [7, 8, 9]
     ]
-    
+
     After rotation, it becomes:
     [
         [7, 4, 1],
@@ -29,10 +29,10 @@ def rotate_2d_matrix(matrix):
         [9, 6, 3]
     ]
     """
-    
+
     # Step 1: Reverse the rows of the matrix
     matrix.reverse()
-    
+
     # Step 2: Swap the elements on the diagonal to transpose the matrix
     for i in range(len(matrix)):
         for j in range(i):
