@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 def island_perimeter(grid):
     # Get the number of rows and columns in the grid
     rows = len(grid)
