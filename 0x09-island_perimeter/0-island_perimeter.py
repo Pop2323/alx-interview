@@ -8,10 +8,10 @@ def island_perimeter(grid):
         for col in range(cols):
             if grid[row][col] == 1:
                 num_land_cells += 1
-                
+
                 if col > 0 and grid[row][col - 1] == 1:
                     num_shared_edges += 1
-                
+
                 if row > 0 and grid[row - 1][col] == 1:
                     num_shared_edges += 1
 
