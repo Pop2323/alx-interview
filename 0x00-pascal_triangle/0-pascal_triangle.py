@@ -3,6 +3,7 @@
 0. This is Pascal's Triangle
 """
 
+
 def pascal_triangle(n):
     """
     Returns a list of lists of integers representing
@@ -15,7 +16,7 @@ def pascal_triangle(n):
     list: A list of lists where each inner list
     represents a level in Pascal's triangle.
     """
-    
+
     triangle = []
     if n > 0:
         for level in range(n):
