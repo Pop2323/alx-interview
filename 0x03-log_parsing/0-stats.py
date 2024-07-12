@@ -10,9 +10,10 @@ def print_msg(dict, total_size):
         if val != 0:
             print("{}: {}".format(key, val))
 
-    total_size = 0
-    code = ""
-    count = 0
+
+total_size = 0
+code = ""
+count = 0
 
 
 # Dictionary to count occurrences of each HTTP status code
